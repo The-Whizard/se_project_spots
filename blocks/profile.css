@@ -19,7 +19,7 @@
 .profile__name {
   margin: 0 0 12px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  /* font-style: medium;  i dont need to specify the font-style bc i have @font-face @imported vendor/font.css*/
+  /* font-style: normal;  i dont need to specify the font-style bc i have @font-face @imported vendor/font.css*/
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
@@ -51,12 +51,13 @@
   padding: 0;
   display: flex;
   opacity: 70%;
+  transition: opacity 0.5s;
+  cursor: pointer;
 }
 
 .profile__edit-button:hover {
   opacity: 100%;
-  transition: 0.5s;
-  cursor: pointer;
+  transition: opacity 0.5s;
 }
 
 .profile__edit-icon {
@@ -72,12 +73,14 @@
   border-radius: 8px;
   background-color: #212121;
   color: #fcf5e5;
+  opacity: 100%;
+  transition: opacity 0.5s;
+  cursor: pointer;
 }
 
 .profile__add-button:hover {
   opacity: 80%;
-  transition: 0.5s;
-  cursor: pointer;
+  transition: opacity 0.5s;
 }
 
 .profile__add-icon {
@@ -96,9 +99,7 @@
     max-width: 288px;
   }
   .profile__avatar {
-    margin-right: 0;
-    margin-bottom: 12px;
-    /* margin: 0 0 12px; */
+    margin: 0 0 12px;
     height: 80px;
     width: 80px;
   }

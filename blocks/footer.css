@@ -1,5 +1,15 @@
+.page__section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .footer__copyright {
   margin: 0;
   padding: 60px 0;
   text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: #212121;
+  opacity: 0.7;
 }

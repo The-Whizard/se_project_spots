@@ -2,9 +2,22 @@
 
 ### Overview
 
+- Technologies and Techniques Used
 - Intro
 - Figma
 - Images
+- Project
+
+**Technologies and Techniques Used**
+
+- HTML5
+- CSS3
+- Grid
+- Flexbox
+- Media Queries
+- BEM
+- Normilize.css
+- Poppins Font
 
 **Project**
 
