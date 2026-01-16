@@ -1,0 +1,131 @@
+.modal {
+  visibility: hidden;
+  background-color: #00000080;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.modal_is-opened {
+  visibility: visible;
+}
+
+.modal__container {
+  max-width: 730px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 32px 50px;
+  position: relative;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border: 0;
+  background-color: #fff;
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.4;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.modal__close-button:hover {
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+.modal__title {
+  margin: 0 0 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  /* font-style: normal;  i dont need to specify the font-style bc i have @font-face @imported vendor/font.css*/
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  margin: 0 0 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  /* font-style: normal;  i dont need to specify the font-style bc i have @font-face @imported vendor/font.css*/
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.modal__input {
+  display: block;
+  margin: 8px 0 0;
+  width: 100%;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  padding: 16px 12px;
+  border: 1px solid #212121;
+  border-radius: 8px;
+  opacity: 0.4;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.modal__input:hover {
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+.modal__input::placeholder {
+  color: #2121214d;
+}
+
+.modal__submit-button {
+  padding: 0;
+  width: 156px;
+  /* max-width: 156px; */
+  height: 52px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #212121;
+  color: #fcf5e5;
+}
+
+@media screen and (max-width: 627px) {
+  .modal__container {
+    max-width: 300px;
+  }
+
+  .modal__title {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    /* font-style: normal;  i dont need to specify the font-style bc i have @font-face @imported vendor/font.css*/
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .modal__label {
+    max-width: 276px;
+  }
+
+  .modal__submit-button {
+    width: 100%;
+    /* max-width: none; */
+  }
+}
