@@ -4,6 +4,7 @@ const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileCloseButton = editProfileModal.querySelector(
   ".modal__close-button",
 );
+// edit profile form submission
 const editProfileForm = editProfileModal.querySelector(".modal__form");
 const editProfileNameInput = editProfileModal.querySelector(
   "#profile-name-input",
@@ -11,13 +12,17 @@ const editProfileNameInput = editProfileModal.querySelector(
 const editProfileDescriptionInput = editProfileModal.querySelector(
   "#profile-description-input",
 );
+// profile name/description
+const profileNameEl = document.querySelector(".profile__name");
+const profileDescriptionEl = document.querySelector(".profile__description");
 // new post
 const newPostButton = document.querySelector(".profile__add-button");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
-// profile name/description
-const profileNameEl = document.querySelector(".profile__name");
-const profileDescriptionEl = document.querySelector(".profile__description");
+// new post form submission
+const newPostForm = newPostModal.querySelector(".modal__form");
+const newPostImageInput = newPostModal.querySelector("#card-image-input");
+const newPostCaptionInput = newPostModal.querySelector("#card-caption-input");
 // updates value
 editProfileButton.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
@@ -36,10 +41,21 @@ newPostButton.addEventListener("click", function () {
 newPostCloseButton.addEventListener("click", function () {
   newPostModal.classList.remove("modal_is-opened");
 });
-// updates textContent
+// edit profile form submission handler
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
+  // updates textContent
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
+  editProfileModal.classList.remove("modal_is-opened");
 }
+// edit profile form submit listener
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
+// new post form submission handler
+function handleNewPostSubmit(evt) {
+  evt.preventDefault();
+  console.log("Image Added");
+  newPostModal.classList.remove("modal_is-opened");
+}
+// new post form submit listener
+newPostForm.addEventListener("submit", handleNewPostSubmit);
