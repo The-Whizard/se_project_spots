@@ -29,6 +29,7 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  color: #212121;
 }
 
 .profile__description {
@@ -42,6 +43,7 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  color: #212121b2;
 }
 
 .profile__edit-button {
@@ -68,7 +70,7 @@
   margin-left: auto;
   margin-top: auto;
   padding: 0;
-  width: 149px;
+  width: 157px;
   height: 52px;
   border-radius: 8px;
   background-color: #212121;
@@ -96,7 +98,6 @@
     align-items: center;
     text-align: center;
     padding-top: 20px;
-    max-width: 288px;
   }
   .profile__avatar {
     margin: 0 0 12px;
