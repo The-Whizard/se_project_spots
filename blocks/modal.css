@@ -93,6 +93,7 @@
   opacity: 40%;
   transition: opacity 0.5s;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .modal__input:hover {
@@ -102,7 +103,6 @@
 
 .modal__input::placeholder {
   color: #2121214d;
-  box-sizing: border-box;
 }
 
 .modal__submit-button {
@@ -131,11 +131,8 @@
   }
 
   .modal__title {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
     /* font-style: normal;  i dont need to specify the font-style bc i have @font-face @imported vendor/font.css*/
-    font-weight: 500;
     font-size: 20px;
-    line-height: 1;
   }
 
   .modal__close-button {
