@@ -21,7 +21,7 @@
 
 **Project**
 
-You can check it out [here](https://waqarahmed25.github.io/se_project_spots/)
+You can check it out [here](https://the-whizard.github.io/se_project_spots/)
 
 **Intro**
 
