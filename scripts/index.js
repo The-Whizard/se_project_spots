@@ -42,11 +42,11 @@ editProfileCloseButton.addEventListener("click", function () {
 });
 
 newPostButton.addEventListener("click", function () {
-  openModal(editProfileModal);
+  openModal(newPostModal);
 });
 
 newPostCloseButton.addEventListener("click", function () {
-  closeModal(editProfileModal);
+  closeModal(newPostModal);
 });
 // edit profile form submission handler
 function handleEditProfileSubmit(evt) {
@@ -54,7 +54,7 @@ function handleEditProfileSubmit(evt) {
   // updates textContent
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 }
 // edit profile form submit listener
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
@@ -62,7 +62,7 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
   console.log(newPostImageInput.value, newPostCaptionInput.value);
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 }
 // new post form submit listener
 newPostForm.addEventListener("submit", handleNewPostSubmit);

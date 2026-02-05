@@ -126,7 +126,6 @@
 
 @media screen and (max-width: 627px) {
   .modal__container {
-    max-width: 300px;
     padding: 22px 12px 12px;
   }
 
@@ -136,12 +135,12 @@
   }
 
   .modal__close-button {
-    top: 22px;
+    top: 12px;
     right: 12px;
   }
 
-  .modal__label {
-    max-width: 276px;
+  .modal__input {
+    font-size: 16px;
   }
 
   .modal__submit-button {
